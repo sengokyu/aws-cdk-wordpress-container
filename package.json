@@ -5,8 +5,9 @@
     "wordpress-container": "bin/wordpress-container.js"
   },
   "scripts": {
-    "deploy": "dotenv -- cross-var cdk deploy --profile %AWS_PROFILE%",
-    "destroy": "dotenv -- cross-var cdk destroy --profile %AWS_PROFILE%"
+    "list": "dotenv -- cdk list",
+    "deploy": "dotenv -- cdk deploy",
+    "destroy": "dotenv -- cdk destroy"
   },
   "devDependencies": {
     "@types/node": "20.10",

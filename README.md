@@ -1,14 +1,14 @@
-# Welcome to your CDK TypeScript project
+# AWS ECS CDK Samples
 
-This is a blank project for CDK development with TypeScript.
+各サンプルはステージとして作成されています。
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+- Sample 1 : Ec2MinimumStage/Stack
+- Sample 2 : FargateAuroraEfsStage/Stack
 
-## Useful commands
+# Sample 1 : Ec2MinimumStage/Stack
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+EC2 based ECS.
+
+# Sample 2 : FargateAuroraEfsStage/Stack
+
+Fargate based ECS with Aurora and EFS.

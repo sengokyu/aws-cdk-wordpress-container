@@ -6,11 +6,14 @@ import * as iam from "aws-cdk-lib/aws-iam";
 import * as logs from "aws-cdk-lib/aws-logs";
 import { Construct } from "constructs";
 
-export class MinimumSampleStage extends cdk.Stage {
+/**
+ * VPC / EC2 Instance / ECS Task Definition / ECS Service
+ */
+export class Ec2MinimumStage extends cdk.Stage {
   constructor(scope: Construct, id: string, props?: cdk.StageProps) {
     super(scope, id, props);
 
-    const stack = new cdk.Stack(this, "ExEcsWordpressStack");
+    const stack = new cdk.Stack(this, "Stack");
 
     // VPC publicサブネットのみ
     const vpc = new ec2.Vpc(stack, "Vpc", {
